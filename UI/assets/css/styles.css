@@ -1,0 +1,20 @@
+body {
+    background-color: #ffffff;
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+.nav-header {
+    flex-grow: 8;
+}
+.nav-auth {
+    display: flex;
+    flex-grow: 2;
+}
+.nav-signin {
+    flex-grow: 5;
+}
+.nav-signup {
+    flex-grow: 5;
+}
