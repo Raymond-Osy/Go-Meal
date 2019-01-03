@@ -23,6 +23,7 @@ body {
     justify-content: center;
     text-align: center;
 }
+/* Navigation bar  */
 nav {
     padding: 8px;
     margin: 0px;
@@ -45,6 +46,9 @@ nav a:hover {
     font-family: 'Sacramento', cursive;
     font-weight: 600;
 }
+.nav-header a:hover {
+    color: #000000;
+}
 .meal {
     color: #EA5B31;
 }
@@ -61,6 +65,81 @@ nav a:hover {
     flex-grow: 5;
 }
 
+/* Main section */
+.container {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.main-img {
+    position: absolute;
+    right: 0;
+    width: 700px;
+    top: -125px;
+}
+.img {
+    height: auto;
+    max-width: 100%;
+}
+.main-info {
+    position: relative;
+}
+.main-info h2 {
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+.main-info p {
+    font-size: 20px;
+}
+.main-info a {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #3cb371;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    width: 20%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.main-info a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.main-info a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.main-info a:hover span {
+    padding-right: 25px;
+}
+  
+.main-info a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+footer {
+    display: flex;
+    height: 70px;
+    color: #000;
+    border-top: 1px solid rgba(97, 95, 95, 0.31);
+    padding: 0 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    /* margin-top: 20px; */
+}
 /* Debugging colors */
 .tomato {
     background-color: #ff6347;
