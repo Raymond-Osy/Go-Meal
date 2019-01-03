@@ -1,20 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,600i");
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+html {
+    height: 100%;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
 body {
     background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.nav-container {
+.row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+nav {
+    padding: 8px;
+    margin: 0px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    color: inherit; 
+    text-decoration:none;
+}
+nav a:hover {
+    color: #EA5B31;
+    text-decoration:none;
 }
 .nav-header {
+    padding: 5px;
+    padding-left: 25px;
     flex-grow: 8;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+    font-weight: 600;
+}
+.meal {
+    color: #EA5B31;
 }
 .nav-auth {
+    padding: 5px;
     display: flex;
     flex-grow: 2;
+    font-size: 18px;
 }
 .nav-signin {
     flex-grow: 5;
 }
 .nav-signup {
     flex-grow: 5;
+}
+
+/* Debugging colors */
+.tomato {
+    background-color: #ff6347;
+}
+.blue {
+    background-color:#1e90ff;
+}
+.green {
+    background-color:#3cb371;
 }
