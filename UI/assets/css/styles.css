@@ -140,6 +140,47 @@ footer {
     font-size: 13px;
     /* margin-top: 20px; */
 }
+@media (max-width: 1270px){
+    .container {
+        width: 100%;
+    }
+    .main-img {
+        width: 420px;
+        top: -70px;
+        overflow: hidden;
+        height: 400px;
+    }
+    .img {
+        position: absolute;
+        right: -30%;
+    }
+    .main-info {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 800px){
+    .container {
+        width: 100%;
+    }
+    .main-img {
+        width: 420px;
+        top: -70px;
+        overflow: hidden;
+        height: 400px;
+    }
+    .img {
+        position: absolute;
+        right: -65%;
+    }
+    .main-info {
+        margin-left: 20px;
+    }
+    .main-info a {
+        font-size: 20px;
+        padding: 17px;
+        width: 30%;
+    }
+}
 /* Debugging colors */
 .tomato {
     background-color: #ff6347;
