@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.auth-main-img {
+    display: block;
+    width: 20%;
+    flex-basis: 50%;
+}
+.meals {
+    background-color: #1e90ff;
+    background-image: url("../img/food101.jpg");
+}
+.auth-main-form {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    /* height: 100vh; */
+}
+.box {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.auth-main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    flex-direction: column;
+}
+.auth-main-img {
+    background-image: url("../img/food101.jpg");
+    background-color: #ffffff;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+}
+.auth-main h3 {
+    border-bottom: 2px solid #EA5B31;
+}
+/* .auth-main h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 1px;
+    width: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 0;
+    border-bottom: 2px solid #e54e02;
+} */
+.auth-img {
+    flex: 50%;
+    max-width: 20%;
+    display: flex;
+    margin-top: 20px;
+}
+.form-box {
+    padding: 10px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0px 35px 35px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+.form-container button{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=email], input[type=password], input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.accounts-btn {
+    background-color: #3cb371;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accounts-btn:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link {
+    color: #EA5B31;
+    text-decoration: none;
+}
+footer {
+    margin-top: 10px;
+}
+
+/* Debugging colors */
+.tomato {
+    background-color: #ff6347;
+}
+.blue {
+    background-color:#1e90ff;
+}
+.green {
+    background-color:#3cb371;
+}
