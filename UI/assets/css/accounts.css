@@ -30,7 +30,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin: 5px;
     flex-direction: column;
 }
 .auth-main-img {
@@ -120,6 +120,11 @@ input[type=email], input[type=password], input[type=text] {
 footer {
     margin-top: 10px;
 }
+@media (max-width: 450px){
+
+}
+
+
 
 /* Debugging colors */
 .tomato {
