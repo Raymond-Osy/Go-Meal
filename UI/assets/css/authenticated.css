@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,600i");
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+body {
+    background-color: #EBEFF2;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+
+/* Side navigation styles */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+}
+.sidebar a {
+    display: block;
+    color: #000000;
+    padding: 16px;
+    text-decoration: none;
+}
+   
+.sidebar a.active {
+    border-left: 3px solid #EA5B31;
+    background-color: #F1F2F2;
+    transition: background-color 0.5s;
+    color: #EA5B31;
+}
+
+.sb-links a:hover {
+    background-color: #F1F2F2;
+    color: #EA5B31;
+}
+div.content {
+    margin-left: 250px;
+    padding: 1px 16px;
+    height: 100%;
+}
+.nav-header {
+    padding: 5px;
+    padding-left: 25px;
+    flex-grow: 8;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+    font-weight: 600;
+}
+.logo:hover {
+    background-color: inherit; 
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+.name-circle {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: #EA5B31;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+    .name-circle {
+        display: none;
+    }
+    .d-none {
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .name-circle {
+        display: block;
+    }
+  }
+
+
+/* Debugging colors */
+.tomato {
+    background-color: #ff6347;
+}
+.blue {
+    background-color:#1e90ff;
+}
+.green {
+    background-color:#3cb371;
+}
