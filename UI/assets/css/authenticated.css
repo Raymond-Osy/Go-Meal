@@ -94,6 +94,7 @@ div.content {
     flex-direction: column;
     align-content: space-around;
     padding: 8px;
+    margin: 10px 0px;
 }
 .wrap {
     display: flex;
@@ -217,6 +218,19 @@ div.content {
     margin-top: 0;
 }
 
+.menu-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text-center {
+    font-family: 'Sacramento', cursive;
+}
+.line {
+    padding: 0px 100px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #252525;
+}
 
 /* Footer */
 .footer {
@@ -255,7 +269,16 @@ div.content {
     .d-none {
         display: none;
     }
+    .text-center {
+        font-size: 75%;
+    }
+    .line {
+        padding: 0px 75px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #252525;
+    }
   }
+  
   
   @media screen and (max-width: 400px) {
     .sidebar a {
@@ -269,6 +292,14 @@ div.content {
     div.content {
         padding-top: 250px;
         margin-left: 0;
+    }
+    .text-center {
+        font-size: 75%;
+    }
+    .line {
+        padding: 0px 75px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #252525;
     }
   }
 
