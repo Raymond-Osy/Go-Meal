@@ -1,0 +1,25 @@
+.name-circle {
+    background-color: #4CAF50;
+}
+.sidebar a.active {
+    border-left: 3px solid #4CAF50;
+    color: #4CAF50;
+}
+.sb-links a:hover {
+    color: #4CAF50;
+}
+#report th {
+    background-color: #4CAF50;
+}
+@media screen and (max-width: 700px) {
+    .sidebar a.active {
+        border-left: 0px;
+        border-bottom: 3px solid #4CAF50;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sidebar a.active {
+        border-left: 0px;
+        border-bottom: 0px;
+    }
+}
