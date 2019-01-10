@@ -142,24 +142,80 @@ div.content {
     width: 60%;
 }
 .btn {
+    border-radius: 3px;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.6;
     transition: 0.3s;
     font-size: 16px;
     margin: 10px 0px;
     cursor: pointer;
 }
 .btn:hover {
-    opacity: 1;
+    opacity: 0.6;
 }
 .history-btn {
     margin-top: 20px;
 }
-
+.add-btn {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    flex: 0 1 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: arial;
+}
+  
+.price {
+    color: grey;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Nunito", sans-serif;
+}
+.card button:hover {
+    opacity: 0.7;
+}
+.img-responsive {
+    display: block;
+	border: 0;
+	width: 100%;
+	height: 150px;
+}
+.meal-info, .btn-group {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 75%;
+}
+.info, .modify-btn {
+    flex: 50%;
+    text-align: center;
+}
+.card > p {
+    text-align: start;
+    font-size: 15px;
+    margin-top: 0;
+}
 
 
 /* Footer */
