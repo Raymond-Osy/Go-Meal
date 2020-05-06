@@ -1,10 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* Imports
-   ========================================================================== */
-   @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-
-   
 /* Document
    ========================================================================== */
 
@@ -27,7 +22,6 @@ html {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
 }
 
 /**
@@ -14347,6 +14341,11 @@ video {
 
 .delay-1000 {
   transition-delay: 1000ms;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 @media (min-width: 640px) {
