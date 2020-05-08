@@ -1,12 +1,14 @@
 import React from "react";
 import mainImg from "../../assets/images/food7.jpg";
-import dinner from "../../assets/images/dinner.png";
 import pyramid from "../../assets/images/food9.jpg";
-import sauce from "../../assets/images/food101.jpg";
 import swallow from "../../assets/images/food103.jpg";
 import orderMeal from "../../assets/svg/order.svg";
 import foodRest from "../../assets/svg/food-rest1.svg";
 import food from "../../assets/svg/food.svg";
+import lunch from "../../assets/svg/lunch.svg";
+import dinner from "../../assets/svg/dinner.svg";
+import cup from "../../assets/svg/cup.svg";
+import pizza from "../../assets/svg/pizza.svg";
 
 const Body = () => (
   <div>
@@ -30,7 +32,7 @@ const Body = () => (
         <div className="bg-white rounded overflow-hidden max-w-xs shadow-2xl text-center items-center p-2 m-6">
           <img className="w-3/12 m-auto mt-3" src={orderMeal} alt="order meal on the go"/>
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div className="font-bold text-xl mb-2">Make an order online</div>
             <p className="text-gray-700 text-sm">
               Getting your favorite dish has never been more easier. Order that dream meal with just the click of your fingers, no stress.
             </p>
@@ -39,7 +41,7 @@ const Body = () => (
         <div className="bg-white rounded overflow-hidden max-w-xs shadow-2xl text-center items-center p-2 m-6">
           <img className="w-3/12 m-auto mt-3" src={foodRest} alt="order meal on the go"/>
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div className="font-bold text-xl mb-2">We dispatch a rider</div>
             <p className="text-gray-700 text-sm">
               Getting your favorite dish has never been more easier. Order that dream meal with just the click of your fingers, no stress.
             </p>
@@ -48,7 +50,7 @@ const Body = () => (
         <div className="bg-white rounded overflow-hidden max-w-xs shadow-2xl text-center items-center p-2 m-6">
           <img className="w-3/12 m-auto mt-3" src={food} alt="order meal on the go"/>
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div className="font-bold text-xl mb-2">You enjoy your meal</div>
             <p className="text-gray-700 text-sm">
               Getting your favorite dish has never been more easier. Order that dream meal with just the click of your fingers, no stress.
             </p>
@@ -57,7 +59,7 @@ const Body = () => (
       </div>
     </section>
 
-    {/* This section contains the Services been offereed and the top trending meals my resturant for a given day(this would be powered by an API) */}
+    {/* This section contains the Services been offered and the top trending meals my resturant for a given day(this would be powered by an API) */}
     <section className="bg-green-100 flex flex-col md:flex-row px-8">
       {/* Service Section */}
       <div className="flex">
@@ -73,26 +75,26 @@ const Body = () => (
                 <p className="font-bold tracking-wide">Breakfast</p>
               </div>
               <div className="text-center items-center">
-                <img className="flex-1 w-5/12 m-auto mt-3" src={food}/>
+                <img className="flex-1 w-5/12 m-auto mt-3" src={lunch}/>
                 <p className="font-bold tracking-wide">Lunch</p>
               </div>
               <div className="text-center items-center">
-                <img className="flex-1 w-5/12 m-auto mt-3" src={food}/>
+                <img className="flex-1 w-5/12 m-auto mt-3" src={dinner}/>
                 <p className="font-bold tracking-wide">Dinner</p>
               </div>
             </div>
 
             <div className="flex flex-row">
               <div className="text-center items-center">
-                <img className="flex-1 w-5/12 m-auto mt-3" src={food}/>
-                <p className="font-bold tracking-wide">Pocket</p>
+                <img className="flex-1 w-5/12 m-auto mt-3" src={pizza}/>
+                <p className="font-bold tracking-wide">Take out</p>
               </div>
               <div className="text-center items-center">
-                <img className="flex-1 w-5/12 m-auto mt-3" src={food}/>
+                <img className="flex-1 w-5/12 m-auto mt-3" src={cup}/>
                 <p className="font-bold tracking-wide">Café</p>
               </div>
               <div className="text-center items-center">
-                <img className="flex-1 w-5/12 m-auto mt-3" src={food}/>
+                <img className="flex-1 w-5/12 m-auto mt-3" src={foodRest}/>
                 <p className="font-bold tracking-wide">Delivery</p>
               </div>
             </div>
@@ -108,17 +110,27 @@ const Body = () => (
         </div>
         <div className="flex">
           <div className="flex flex-row">
-            <div className="flex-1 relative h-48 w-full">
+            <div className="flex-1 relative h-48 w-full mx-3">
               <img className="w-full h-full w-full m-auto object-cover bg-red-500" src={pyramid} />
-              <div className="bg-green-500 flex flex-col absolute justify-center items-center bottom-0 left-0">
-                <h1 className="text-black ">Trending</h1>
+              <div className="flex flex-col absolute p-2 bottom-0 left-0 bg-gray-900 bg-opacity-50 w-full">
+                <div className="flex flex-row items-center cursor-pointer">
+                  <h1 className="text-white text-xl">Trending</h1>
+                  <i class='fas fa-caret-right text-white text-xl pt-1 px-3'></i>
+                </div>
               </div>
             </div>
 
-            {/* <img className="flex-1 w-5/12 m-auto mt-3 px-2" src={dinner} /> */}
+            <div className="flex-1 relative h-48 w-full mx-3">
+              <img className="w-full h-full w-full m-auto object-cover bg-red-500" src={swallow} />
+              <div className="flex flex-col absolute p-2 bottom-0 left-0 bg-gray-900 bg-opacity-50 w-full">
+                <div className="flex flex-row items-center cursor-pointer">
+                  <h1 className="text-white text-xl">Deliveries</h1>
+                  <i class='fas fa-caret-right text-white text-xl pt-1 px-3'></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
       </div>
     </section>
   </div>
