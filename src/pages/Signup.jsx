@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import chef from "../assets/images/chef.jpg";
 
-
 const Signup = () => (
   <div class="flex flex-col">
     <Navbar />

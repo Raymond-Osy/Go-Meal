@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import pizza from "../../assets/svg/pizza.svg";
 import { Link } from "react-router-dom";
 
-const RestaurantDashboard = () => (
+const CustomersDashboard = () => (
   <div className="flex bg-gray-200 h-screen">
     <div className="bg-white w-64 m-0 p-0 fixed h-full overflow-auto shadow-lg">
       <div className="flex flex-col text-center justify-center">
@@ -23,4 +23,4 @@ const RestaurantDashboard = () => (
   </div>
 );
 
-export default RestaurantDashboard;
+export default CustomersDashboard;
