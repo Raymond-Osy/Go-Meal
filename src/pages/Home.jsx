@@ -4,7 +4,7 @@ import Body from "../components/Body/Body"
 import Footer from "../components/Footer/Footer"
 
 const Homepage = () => (
-  <div class="flex flex-col">
+  <div className="flex flex-col">
     <Navbar/>
     <Body/>
     <Footer/>

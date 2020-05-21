@@ -1,7 +1,7 @@
 import React from "react";
 
 const Form = () => (
-  <div class="flex flex-col">
+  <div className="flex flex-col">
     <Navbar/>
     <Body/>
     <Footer/>
