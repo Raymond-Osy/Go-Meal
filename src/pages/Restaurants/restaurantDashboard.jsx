@@ -1,7 +1,5 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import pizza from "../../assets/svg/pizza.svg";
-import { Link } from "react-router-dom";
 
 const RestaurantDashboard = () => (
   <div className="flex bg-gray-200 h-screen">
@@ -18,7 +16,7 @@ const RestaurantDashboard = () => (
     </div>
 
     <div className="ml-64 my-4 px-6">
-      <h1>Something incredible is about to be created in this dashboard, stay tuned!</h1>
+      <h1>Something incredible is about to be created in this resturant dashboard, stay tuned!</h1>
     </div>
   </div>
 );
