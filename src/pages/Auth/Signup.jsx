@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import SocialButton from "../../components/Button/SocialButton";
+import FormInput from "../../components/Form/FormInput";
 import Footer from "../../components/Footer/Footer";
 import chef from "../../assets/images/chef.jpg";
 import google from "../../assets/svg/google.svg";
@@ -21,30 +22,36 @@ const Signup = () => (
         <SocialButton bgColor="bg-red-400" hoverColor="hover:bg-red-300" socialIcon={google} socialPlatform="Google"/>
         <SocialButton bgColor="bg-blue-400" hoverColor="hover:bg-blue-300" socialIcon={facebook} socialPlatform="Facebook"/>
         <div className="flex justify-center text-gray-700">OR</div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
-            Username
-          </label>
-          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" for="Email Address">
-            Email Address
-          </label>
-          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="E-mail" />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" for="phone number">
-            Phone Number
-          </label>
-          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tel" type="tel" placeholder="Phone Number" />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" for="Password">
-            Password
-          </label>
-          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="Password" />
-        </div>
+        <FormInput
+          label="Username"
+          placeholder="Username"
+          name="username"
+          type="text"
+          required
+        />
+        <FormInput
+          label="Email Address"
+          placeholder="Email Address"
+          name="email"
+          type="email"
+          required
+        />
+        <FormInput
+          label="Phone Number"
+          placeholder="Phone Number"
+          name="phonenumber"
+          type="tel"
+          required
+        />
+        <FormInput
+          label="Password"
+          placeholder="Password"
+          name="password"
+          type="password"
+          required
+        />
+
+        {/* This is not yet a reusable component cos I wish to make it dynamic such that when a user doesn't add a password, the styling changes and the text comes out */}
         <div className="mb-6">
           <label className="block text-gray-700 text-sm font-bold mb-2" for="confirm password">
             Confirm Password
