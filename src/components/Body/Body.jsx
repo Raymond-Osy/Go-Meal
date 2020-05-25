@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HomeCardList from "../../components/HomeCardList/HomeCardList";
 import Collection from "../Collection/Collection";
 import mainImg from "../../assets/images/food7.jpg";
@@ -19,7 +20,7 @@ const Body = () => (
         <div className="flex-1 py-2 px-4 mt-24">
             <h1 className="text-4xl md:text-5xl font-extrabold uppercase leading-tight">Order delicious meal on the go!</h1>
             <p className="text-gray-700 text-xl font-hairline mt-5 mb-10">We prepare your favorite dishes and deliver it at your door step</p>
-            <a className="text-center rounded-full py-4 px-12 bg-green-600 hover:bg-green-700 text-white text-xl font-bold" href="#">I'm Hungry</a>
+            <Link className="text-center rounded-full py-4 px-12 bg-green-600 hover:bg-green-700 text-white text-xl font-bold" to="/signin">I'm Hungry</Link>
         </div>
         <div className="flex-1 hidden md:block">
             <img src={mainImg} alt="Image of rice delicacy"/>
